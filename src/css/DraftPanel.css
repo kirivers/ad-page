@@ -1,0 +1,16 @@
+.draft-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+  background-color: #121212;
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+}
+
+.center-pool {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

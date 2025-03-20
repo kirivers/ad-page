@@ -1,0 +1,27 @@
+.hero-panel {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #4a4a4a;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  width: 320px;
+}
+
+.hero-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+}
+
+.abilities-container {
+  display: flex;
+  margin-left: 12px;
+  gap: 8px;
+}
+
+.ability-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}

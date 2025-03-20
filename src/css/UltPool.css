@@ -1,0 +1,28 @@
+.ult-pool {
+  text-align: center;
+  background-color: #1e1e1e;
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  padding: 12px;
+  width: fit-content;
+}
+
+.ult-pool-title {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.ult-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  column-gap: 20px;
+}
+
+.ult-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+}

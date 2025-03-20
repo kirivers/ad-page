@@ -1,0 +1,17 @@
+.spell-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+  background-color: #1e1e1e;
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  padding: 12px;
+  width: fit-content;
+}
+
+.spell-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+}
