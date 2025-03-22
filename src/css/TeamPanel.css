@@ -15,5 +15,5 @@
 .hero-panels {
   display: flex;
   flex-direction: column;
-  gap: 64px; 
+  gap: 56px; 
 }

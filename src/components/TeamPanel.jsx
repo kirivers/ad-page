@@ -10,8 +10,10 @@ const TeamPanel = ({ team, heroes }) => {
         {heroes.map((hero, index) => (
           <HeroPanel
             key={index}
+            heroName = {hero.name}
             heroImage={hero.image}
-            abilityImages={hero.abilities}
+            abilityImages={hero.selectedAbilities}
+            
           />
         ))}
       </div>

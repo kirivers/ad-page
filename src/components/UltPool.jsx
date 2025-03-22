@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/UltPool.css"; // Import the CSS file
 
-const UltPool = ({ ultimateAbilities }) => {
+const UltPool = ({ ultimateAbilities, onAbilityPick }) => {
   return (
     <div className="ult-pool">
       <h2 className="ult-pool-title">Ultimate Abilities</h2>
@@ -11,6 +11,7 @@ const UltPool = ({ ultimateAbilities }) => {
             key={index}
             src={ability}
             alt={`Ultimate Ability ${index + 1}`}
+            onClick={() => onAbilityPick(ability)}
             className="ult-image"
           />
         ))}

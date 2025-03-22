@@ -1,16 +1,35 @@
 .hero-panel {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 8px;
+  padding: 0px;
   border: 1px solid #4a4a4a;
   background-color: #1e1e1e;
   border-radius: 8px;
   width: 320px;
+  
+}
+
+.hero-name {
+  color: rgb(141, 141, 141);
+  font-size: 16px;
+  margin-bottom: 4px;
+  padding-left: 15px;
+  padding-top: 8px;
+  margin-top: 0px;
+  align-self: flex-start;
+
+}
+
+.hero-panel-content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
 }
 
 .hero-image {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 48px;
   border-radius: 4px;
 }
 

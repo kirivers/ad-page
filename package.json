@@ -7,7 +7,8 @@
     "build": "rsbuild build",
     "dev": "rsbuild dev --open",
     "preview": "rsbuild preview",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev-server": "nodemon server.js"
   },
   "dependencies": {
     "express": "^4.21.2",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@rsbuild/core": "^1.2.16",
-    "@rsbuild/plugin-react": "^1.1.1"
+    "@rsbuild/plugin-react": "^1.1.1",
+    "nodemon": "^3.1.9"
   }
 }
