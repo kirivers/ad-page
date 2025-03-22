@@ -122,10 +122,14 @@ const App = () => {
     const hero = { ...team[teamIndex] };
     const abilities = [...hero.selectedAbilities];
   
-    const currentCount = abilities.filter((a) => a !== "stock.jpeg").length;
-    const hasUltimate = ultPool.every((ult) => ult !== abilities[3]); // if slot 3 isn't from ultPool, no ult yet
+    const currentCount = abilities.slice(0, 3).filter(a => a !== "stock.jpeg").length;
+    const hasUltimate = ultimateImages.includes(abilities[3]); 
     const isUlt = ultimateImages.includes(abilityImage);
   
+    if (abilityImage === "stock.jpeg") {
+      console.log("Cannot select a placeholder image.");
+      return;
+    }
     // Enforce ultimate-only final pick
     if (currentCount === 3 && !isUlt) {
       console.log("Final pick must be an ultimate.");
@@ -134,11 +138,11 @@ const App = () => {
   
     // Prevent multiple ultimates
     if (isUlt) {
-      if (abilities[3] !== "stock.jpeg") {
+      if (hasUltimate) {
         console.log("Hero already has an ultimate.");
         return;
       }
-      abilities[3] = abilityImage; // put ult in last slot
+      abilities[3] = abilityImage;
     } else {
       // Place non-ult in first open slot 0-2
       const nextSlot = abilities.findIndex((a, i) => a === "stock.jpeg" && i < 3);
